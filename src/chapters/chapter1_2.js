@@ -19,7 +19,16 @@ export const chapter1_2 = {
         <p>This video will show you different community helpers in action. Watch how they help people every day.</p>
         <div class="video-embed">
           <iframe
-            src="https://www.youtube.com/embed/j0m5YSVMkKc"
+            src="https://www.youtube.com/embed/8HRCH02DoDI?rel=0"
+            title="Community Helpers for Kids"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="video-embed">
+          <iframe
+            src="https://www.youtube.com/embed/GqJwOwMqYzk?rel=0"
             title="Community Helpers for Kids"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
