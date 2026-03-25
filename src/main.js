@@ -35,14 +35,16 @@ const activity = new CommunityActivity(sceneManager);
 const overlayEl = document.getElementById('content-overlay');
 
 router.onChange((route) => {
-  // Stop activity if navigating away
+  // Stop activity if still active
   if (activity.active) {
     activity.stop();
-    // Restore overlay visibility
-    overlayEl.style.display = '';
-    overlayEl.style.pointerEvents = '';
-    canvas.style.pointerEvents = '';
   }
+
+  // Always restore overlay visibility (activity may have hidden it)
+  overlayEl.style.display = '';
+  overlayEl.style.pointerEvents = '';
+  canvas.style.pointerEvents = '';
+  canvas.style.zIndex = '';
 
   const chapter = chapters[route];
   if (chapter) {
