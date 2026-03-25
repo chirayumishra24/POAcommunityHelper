@@ -1007,3 +1007,136 @@ html, body {
   color: var(--color-text-heading);
   margin: 0;
 }
+
+/* ============================================
+   Riddle Component Styles
+   ============================================ */
+.riddle-wrapper {
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  margin-top: 16px;
+}
+
+.riddle-header {
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.riddle-badge.super-challenge {
+  display: inline-block;
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(255, 165, 0, 0.4);
+}
+
+.riddle-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--color-text-heading);
+  font-style: italic;
+  margin-bottom: 24px;
+}
+
+.riddle-answer {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  font-size: 1.5rem;
+  font-family: var(--font-heading);
+  font-weight: 800;
+  color: var(--color-secondary);
+  background: rgba(76, 175, 80, 0.1);
+  border-radius: var(--radius-sm);
+}
+
+.riddle-answer.visible {
+  max-height: 100px;
+  opacity: 1;
+  padding: 16px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.riddle-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.riddle-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.riddle-btn {
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+  border: none;
+}
+
+.riddle-btn.primary {
+  background: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 12px rgba(74, 144, 217, 0.4);
+}
+
+.riddle-btn.primary:hover {
+  background: #3880CD;
+  transform: translateY(-2px);
+}
+
+.riddle-btn.outline {
+  background: transparent;
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+}
+
+.riddle-btn.outline:hover:not(:disabled) {
+  background: rgba(74, 144, 217, 0.1);
+}
+
+.riddle-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.riddle-wrapper.completion {
+  background: linear-gradient(135deg, rgba(74, 144, 217, 0.1), rgba(126, 211, 33, 0.1));
+}
+
+.riddle-wrapper.completion h2 {
+  color: var(--color-secondary);
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.riddle-wrapper.completion p {
+  color: var(--color-text);
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+}
+
