@@ -40,7 +40,14 @@ export class RiddleComponent {
 
     const answerDiv = document.createElement('div');
     answerDiv.className = 'riddle-answer ' + (this.showingAnswer ? 'visible' : '');
-    answerDiv.innerHTML = `👉 <strong>${riddle.answer}</strong>`;
+    
+    let answerHTML = '';
+    if (riddle.image) {
+      answerHTML += `<img src="${riddle.image}" alt="${riddle.answer}" class="riddle-image" />`;
+    }
+    answerHTML += `<div>👉 <strong>${riddle.answer}</strong></div>`;
+    answerDiv.innerHTML = answerHTML;
+    
     wrapper.appendChild(answerDiv);
 
     const controls = document.createElement('div');

@@ -1,21 +1,21 @@
 import { RiddleComponent } from '../ui/RiddleComponent.js';
 
 const riddlesData = [
-  { text: "I don’t fight with people,\nBut I fight with flames.\nWith water and courage,\nI protect homes and names.\nWho am I?", answer: "Firefighter" },
-  { text: "I wear a coat that’s usually white,\nI check your health to make things right.\nWith a stethoscope, I listen well,\nHelping you feel better when you’re unwell.\nWho am I?", answer: "Doctor" },
-  { text: "I don’t cook for myself alone,\nI serve meals that are widely known.\nIn a busy kitchen, I take the lead,\nMaking delicious food for all to eat.\nWho am I?", answer: "Chef" },
-  { text: "I stand at gates both day and night,\nKeeping watch to make things right.\nI may not talk much, but I always see,\nMaking sure the place is safe to be.\nWho am I?", answer: "Security Guard / Watchman" },
-  { text: "I travel near, I travel far,\nBringing packages by bike or car.\nRain or sun, I don’t delay,\nYour parcel reaches you on time each day.\nWho am I?", answer: "Delivery Person" },
-  { text: "I wear a uniform and a badge with pride,\nHelping people and standing by their side.\nLost and confused, you come to me,\nI keep the rules for safety.\nWho am I?", answer: "Police Officer" },
-  { text: "I help young minds grow each day,\nGuiding them along the way.\nWith books and lessons, I help you see,\nThe best version of who you can be.\nWho am I?", answer: "Teacher" },
-  { text: "With soil and seeds, I start my day,\nHelping green life grow my way.\nFlowers bloom because of me,\nMaking the world a better place to see.\nWho am I?", answer: "Gardener" },
-  { text: "I don’t build houses, but I help you stay,\nClean and healthy every day.\nIn hospitals, I’m always near,\nCaring for patients with kindness and care.\nWho am I?", answer: "Nurse" },
-  { text: "I control traffic without a car,\nWhistling loudly, heard from afar.\nRaising my hand, I make you stop,\nKeeping roads safe around the clock.\nWho am I?", answer: "Traffic Police" },
-  { text: "SUPER CHALLENGE:\nI help in danger, but I’m not alone,\nA team supports me wherever I’m known.\nWith tools and courage, we work as one,\nUntil the rescue work is done.\nWho am I?", answer: "Firefighter Team" },
-  { text: "SUPER CHALLENGE:\nI don’t build schools, but I build minds,\nShaping futures of all kinds.\nEvery word I say can guide,\nHelping knowledge grow inside.\nWho am I?", answer: "Teacher" },
-  { text: "SUPER CHALLENGE:\nI don’t grow food, but I help it reach you,\nFrom faraway places to something you chew.\nWithout me, your order would never arrive,\nKeeping delivery systems alive.\nWho am I?", answer: "Delivery Person" },
-  { text: "SUPER CHALLENGE:\nI keep watch when others sleep,\nMy duty is strong, my promise I keep.\nNo danger escapes my sight,\nI guard your safety day and night.\nWho am I?", answer: "Security Guard" },
-  { text: "SUPER CHALLENGE:\nI don’t make rules, but I make sure they’re followed,\nOn busy streets or roads that are hollowed.\nWith signals and signs, I guide the flow,\nEnsuring where vehicles can safely go.\nWho am I?", answer: "Traffic Police" }
+  { text: "I don’t fight with people,\nBut I fight with flames.\nWith water and courage,\nI protect homes and names.\nWho am I?", answer: "Firefighter", image: "images/firefighter.png" },
+  { text: "I wear a coat that’s usually white,\nI check your health to make things right.\nWith a stethoscope, I listen well,\nHelping you feel better when you’re unwell.\nWho am I?", answer: "Doctor", image: "images/doctor.png" },
+  { text: "I don’t cook for myself alone,\nI serve meals that are widely known.\nIn a busy kitchen, I take the lead,\nMaking delicious food for all to eat.\nWho am I?", answer: "Chef", image: "images/chef.png" },
+  { text: "I stand at gates both day and night,\nKeeping watch to make things right.\nI may not talk much, but I always see,\nMaking sure the place is safe to be.\nWho am I?", answer: "Security Guard / Watchman", image: "images/security_guard.png" },
+  { text: "I travel near, I travel far,\nBringing packages by bike or car.\nRain or sun, I don’t delay,\nYour parcel reaches you on time each day.\nWho am I?", answer: "Delivery Person", image: "images/delivery_person.png" },
+  { text: "I wear a uniform and a badge with pride,\nHelping people and standing by their side.\nLost and confused, you come to me,\nI keep the rules for safety.\nWho am I?", answer: "Police Officer", image: "images/police.png" },
+  { text: "I help young minds grow each day,\nGuiding them along the way.\nWith books and lessons, I help you see,\nThe best version of who you can be.\nWho am I?", answer: "Teacher", image: "images/teacher.png" },
+  { text: "With soil and seeds, I start my day,\nHelping green life grow my way.\nFlowers bloom because of me,\nMaking the world a better place to see.\nWho am I?", answer: "Gardener", image: "images/gardener.png" },
+  { text: "I don’t build houses, but I help you stay,\nClean and healthy every day.\nIn hospitals, I’m always near,\nCaring for patients with kindness and care.\nWho am I?", answer: "Nurse", image: "images/nurse.png" },
+  { text: "I control traffic without a car,\nWhistling loudly, heard from afar.\nRaising my hand, I make you stop,\nKeeping roads safe around the clock.\nWho am I?", answer: "Traffic Police", image: "images/traffic_police.png" },
+  { text: "SUPER CHALLENGE:\nI help in danger, but I’m not alone,\nA team supports me wherever I’m known.\nWith tools and courage, we work as one,\nUntil the rescue work is done.\nWho am I?", answer: "Firefighter Team", image: "images/firefighter.png" },
+  { text: "SUPER CHALLENGE:\nI don’t build schools, but I build minds,\nShaping futures of all kinds.\nEvery word I say can guide,\nHelping knowledge grow inside.\nWho am I?", answer: "Teacher", image: "images/teacher.png" },
+  { text: "SUPER CHALLENGE:\nI don’t grow food, but I help it reach you,\nFrom faraway places to something you chew.\nWithout me, your order would never arrive,\nKeeping delivery systems alive.\nWho am I?", answer: "Delivery Person", image: "images/delivery_person.png" },
+  { text: "SUPER CHALLENGE:\nI keep watch when others sleep,\nMy duty is strong, my promise I keep.\nNo danger escapes my sight,\nI guard your safety day and night.\nWho am I?", answer: "Security Guard", image: "images/security_guard.png" },
+  { text: "SUPER CHALLENGE:\nI don’t make rules, but I make sure they’re followed,\nOn busy streets or roads that are hollowed.\nWith signals and signs, I guide the flow,\nEnsuring where vehicles can safely go.\nWho am I?", answer: "Traffic Police", image: "images/traffic_police.png" }
 ];
 
 export const chapter2_3 = {
