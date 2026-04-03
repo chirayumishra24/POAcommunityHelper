@@ -3,6 +3,7 @@ export class QuizComponent {
     this.questions = questions;
     this.score = 0;
     this.answered = 0;
+    this.audioContext = null;
   }
 
   render(container) {
@@ -94,11 +95,77 @@ export class QuizComponent {
 
     if (isCorrect) this.score++;
     this.answered++;
+    this._playFeedbackTone(isCorrect);
 
     // Show score when all answered
     if (this.answered === this.questions.length) {
       this._showScore();
     }
+  }
+
+  _getAudioContext() {
+    if (this.audioContext) return this.audioContext;
+
+    const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+    if (!AudioContextClass) return null;
+
+    this.audioContext = new AudioContextClass();
+    return this.audioContext;
+  }
+
+  _playFeedbackTone(isCorrect) {
+    const audioContext = this._getAudioContext();
+    if (!audioContext) return;
+
+    const playSequence = () => {
+      const tones = isCorrect
+        ? [
+            { frequency: 523.25, duration: 0.12, volume: 0.045, type: 'sine' },
+            { frequency: 659.25, duration: 0.14, volume: 0.05, type: 'sine' },
+            { frequency: 783.99, duration: 0.18, volume: 0.05, type: 'sine' },
+          ]
+        : [
+            { frequency: 392.0, duration: 0.14, volume: 0.05, type: 'triangle' },
+            { frequency: 329.63, duration: 0.16, volume: 0.05, type: 'triangle' },
+            { frequency: 261.63, duration: 0.2, volume: 0.045, type: 'triangle' },
+          ];
+
+      this._playToneSequence(tones);
+    };
+
+    if (audioContext.state === 'suspended') {
+      audioContext.resume().then(playSequence).catch(() => {});
+      return;
+    }
+
+    playSequence();
+  }
+
+  _playToneSequence(tones) {
+    const audioContext = this._getAudioContext();
+    if (!audioContext) return;
+
+    let startTime = audioContext.currentTime;
+
+    tones.forEach(({ frequency, duration, volume, type }) => {
+      const oscillator = audioContext.createOscillator();
+      const gainNode = audioContext.createGain();
+
+      oscillator.type = type;
+      oscillator.frequency.setValueAtTime(frequency, startTime);
+
+      gainNode.gain.setValueAtTime(0.0001, startTime);
+      gainNode.gain.exponentialRampToValueAtTime(volume, startTime + 0.02);
+      gainNode.gain.exponentialRampToValueAtTime(0.0001, startTime + duration);
+
+      oscillator.connect(gainNode);
+      gainNode.connect(audioContext.destination);
+
+      oscillator.start(startTime);
+      oscillator.stop(startTime + duration + 0.02);
+
+      startTime += duration;
+    });
   }
 
   _showScore() {

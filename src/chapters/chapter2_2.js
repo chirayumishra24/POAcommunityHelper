@@ -29,7 +29,7 @@ export const chapter2_2 = {
         <div class="step-card">
           <div class="step-number">Roleplay 1</div>
           <div class="step-title">Be the Firefighter</div>
-          <img src="/images/roleplay_firefighter.png" alt="Firefighter Roleplay" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 16px 0; display: block;" />
+          <img src="/images/roleplay_firefighter.png" alt="Firefighter Roleplay" style="width: 65%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 16px auto; display: block;" />
           <p>You are a firefighter. Mrs. Sharma's kitchen is on fire. What will you do?</p>
           <ul>
             <li>Put on your safety gear (helmet, fireproof suit, boots)</li>
@@ -46,7 +46,7 @@ export const chapter2_2 = {
         <div class="step-card">
           <div class="step-number">Roleplay 2</div>
           <div class="step-title">Be the Doctor</div>
-          <img src="/images/roleplay_doctor.png" alt="Doctor Roleplay" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 16px 0; display: block;" />
+          <img src="/images/roleplay_doctor.png" alt="Doctor Roleplay" style="width: 65%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 16px auto; display: block;" />
           <p>You are a doctor. Little Rohan comes to the hospital with a high fever. How will you help?</p>
           <ul>
             <li>Greet Rohan and his mother with a warm smile</li>
@@ -63,7 +63,7 @@ export const chapter2_2 = {
         <div class="step-card">
           <div class="step-number">Roleplay 3</div>
           <div class="step-title">Be the Police Officer</div>
-          <img src="/images/roleplay_police.png" alt="Police Roleplay" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 16px 0; display: block;" />
+          <img src="/images/roleplay_police.png" alt="Police Roleplay" style="width: 65%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin: 16px auto; display: block;" />
           <p>You are a police officer. Priya reports that her bicycle was stolen. What steps will you take?</p>
           <ul>
             <li>Listen to Priya's complaint carefully</li>

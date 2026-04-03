@@ -37,7 +37,7 @@ export const chapter2_3 = {
       <!-- Takeaway grid card -->
       <div class="topic-card">
         <h2>What You Should Remember</h2>
-        <div class="chapter-images" style="margin: 16px 0;"><img src="/images/takeaways_all.png" alt="All Takeaways Summary" style="width: 100%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block;" /></div>
+        <div class="chapter-images" style="margin: 16px 0;"><img src="/images/takeaways_all.png" alt="All Takeaways Summary" style="width: 65%; max-width: 65%; height: auto; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); display: block; margin: 0 auto;" /></div>
         <div class="takeaway-grid">
           <div class="takeaway-card">
             <div class="takeaway-icon">1</div>
