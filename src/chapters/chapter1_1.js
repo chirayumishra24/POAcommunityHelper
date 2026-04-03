@@ -9,6 +9,7 @@ export const chapter1_1 = {
       <div class="topic-card header-card">
         <span class="module-badge module-1">Module 1 - Chapter 1</span>
         <h1>Welcome to Our Community</h1>
+        <div class="chapter-images" style="margin: 10px 0;"><img src="/images/info_welcome.png" alt="Welcome to Community" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" /></div>
         <p class="chapter-subtitle">Meet the helpers who make our community a safe and happy place</p>
         <p>Every day, there are special people in our community who work hard to help us. They keep us safe, healthy, and happy. These people are called <strong>Community Helpers</strong>.</p>
       </div>
@@ -18,38 +19,37 @@ export const chapter1_1 = {
         <h2>Who Are Community Helpers?</h2>
         <p>Community helpers are people who do important jobs to make our community a better place to live. Let us learn about some of them.</p>
 
-        <div class="pointer-item">
-          <img src="/images/doctor.png" alt="Doctor helping a patient" />
-          <div class="pointer-text">
-            <strong>Doctor</strong>
-            <p>When you feel sick, the doctor checks you and gives you medicine to feel better. Doctors work in hospitals and clinics.</p>
+        <div class="helpers-grid">
+          <div class="pointer-item">
+            <img src="/images/doctor.png" alt="Doctor helping a patient" />
+            <div class="pointer-text">
+              <strong>Doctor</strong>
+              <p>When you feel sick, the doctor checks you and gives you medicine to feel better. Doctors work in hospitals and clinics.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="pointer-item">
-          <img src="/images/firefighter.png" alt="Firefighter putting out fire" />
-          <div class="pointer-text">
-            <strong>Firefighter</strong>
-            <p>Firefighters are very brave. They rush to put out fires and rescue people from dangerous situations.</p>
+          <div class="pointer-item">
+            <img src="/images/firefighter.png" alt="Firefighter putting out fire" />
+            <div class="pointer-text">
+              <strong>Firefighter</strong>
+              <p>Firefighters are very brave. They rush to put out fires and rescue people from dangerous situations.</p>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <!-- More helpers -->
-      <div class="topic-card">
-        <div class="pointer-item">
-          <img src="/images/police.png" alt="Police officer" />
-          <div class="pointer-text">
-            <strong>Police Officer</strong>
-            <p>Police officers keep our streets safe. They help catch bad people and make sure everyone follows the rules.</p>
+          <div class="pointer-item">
+            <img src="/images/police.png" alt="Police officer" />
+            <div class="pointer-text">
+              <strong>Police Officer</strong>
+              <p>Police officers keep our streets safe. They help catch bad people and make sure everyone follows the rules.</p>
+            </div>
           </div>
-        </div>
 
-        <div class="pointer-item">
-          <img src="/images/teacher.png" alt="Teacher in classroom" />
-          <div class="pointer-text">
-            <strong>Teacher</strong>
-            <p>Teachers help us learn new things every day. They teach reading, writing, math, and many other subjects in school.</p>
+          <div class="pointer-item">
+            <img src="/images/teacher.png" alt="Teacher in classroom" />
+            <div class="pointer-text">
+              <strong>Teacher</strong>
+              <p>Teachers help us learn new things every day. They teach reading, writing, math, and many other subjects in school.</p>
+            </div>
           </div>
         </div>
       </div>

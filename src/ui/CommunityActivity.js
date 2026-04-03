@@ -96,7 +96,7 @@ export class CommunityActivity {
       this.sm.animatedObjects.push(ring);
 
       // Floating label above building
-      this._addLabel(name, config.x, 7, config.z, config.color);
+      this._addLabel(name, config.x, 11, config.z, config.color);
     }
   }
 
@@ -124,8 +124,14 @@ export class CommunityActivity {
     ctx.fillText(labels[name] || name, 128, 32);
 
     const texture = new THREE.CanvasTexture(canvas);
-    const spriteMat = new THREE.SpriteMaterial({ map: texture, transparent: true });
+    const spriteMat = new THREE.SpriteMaterial({ 
+      map: texture, 
+      transparent: true,
+      depthTest: false,
+      depthWrite: false
+    });
     const sprite = new THREE.Sprite(spriteMat);
+    sprite.renderOrder = 999;
     sprite.position.set(x, y, z);
     sprite.scale.set(4, 1, 1);
     this.scene.add(sprite);

@@ -22,11 +22,13 @@ export const chapter2_1 = {
         <div class="step-card">
           <div class="step-number">Scenario 1</div>
           <div class="step-title">Fire in the Kitchen</div>
+          <img src="/images/scenario_fire.png" alt="Fire in kitchen" style="width: 100%; height: auto; display: block; margin: 16px 0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
           <p>Mrs. Sharma was cooking breakfast when a fire started in her kitchen. The flames are getting bigger. Who should she call for help?</p>
         </div>
         <div class="step-card">
           <div class="step-number">Scenario 2</div>
           <div class="step-title">A Child Falls Ill</div>
+          <img src="/images/scenario_sick.png" alt="Sick child" style="width: 100%; height: auto; display: block; margin: 16px 0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
           <p>Little Rohan has a very high fever and is feeling very weak. His mother is worried. Where should she take him? Who can help Rohan feel better?</p>
         </div>
       </div>
@@ -36,11 +38,13 @@ export const chapter2_1 = {
         <div class="step-card">
           <div class="step-number">Scenario 3</div>
           <div class="step-title">Stolen Bicycle</div>
+          <img src="/images/scenario_bicycle.png" alt="Stolen Bicycle" style="width: 100%; height: auto; display: block; margin: 16px 0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
           <p>Priya parked her bicycle outside the shop, but when she came back it was gone. Someone took it. Who should Priya go to for help?</p>
         </div>
         <div class="step-card">
           <div class="step-number">Scenario 4</div>
           <div class="step-title">Lost in the Market</div>
+          <img src="/images/scenario_lost.png" alt="Lost in Market" style="width: 100%; height: auto; display: block; margin: 16px 0; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" />
           <p>A young child got separated from their parents in the busy market. The child is crying and scared. Who can help find the parents?</p>
         </div>
       </div>

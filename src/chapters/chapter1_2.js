@@ -52,12 +52,12 @@ export const chapter1_2 = {
       <!-- Fun Facts -->
       <div class="topic-card">
         <h2>Fun Facts</h2>
-        <ul>
-          <li>Firefighters can respond to emergencies in less than 5 minutes</li>
-          <li>Doctors study for many years to learn how to help sick people</li>
-          <li>Police officers drive special cars with sirens and flashing lights</li>
-          <li>Teachers plan every lesson to make learning fun for students</li>
-        </ul>
+        <div class="infographic-grid">
+          <img src="/images/infographic_firefighter.png" alt="Firefighter fun fact" />
+          <img src="/images/infographic_doctor.png" alt="Doctor fun fact" />
+          <img src="/images/infographic_police.png" alt="Police officer fun fact" />
+          <img src="/images/infographic_teacher.png" alt="Teacher fun fact" />
+        </div>
         <p>After watching the video, head to the next chapter to test your knowledge with a fun quiz.</p>
       </div>
     `;

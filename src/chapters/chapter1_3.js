@@ -44,6 +44,7 @@ export const chapter1_3 = {
       <div class="topic-card header-card">
         <span class="module-badge module-1">Module 1 - Chapter 3</span>
         <h1>Quiz Time</h1>
+        <div class="chapter-images" style="margin: 10px 0;"><img src="/images/info_quiz.png" alt="Quiz Time" style="max-width: 100%; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" /></div>
         <p class="chapter-subtitle">Test what you have learned about community helpers</p>
         <p>Great job watching the video. Now let us see how much you remember. Click on the correct answer for each question.</p>
       </div>
